@@ -1,6 +1,8 @@
 import Box from "@mui/material/Box";
 import { styled } from "@mui/material/styles";
-import doraCommunityOfPractice from "../assets/dora-community-of-practice.png";
+
+import doraLogo from "../assets/dora-logo.jpg";
+import doraLogoNoWords from "../assets/dora-logo-no-words.svg";
 import { Nav } from "./Nav";
 
 const HeaderStyled = styled(Box)({
@@ -17,7 +19,7 @@ export const Header = () => {
   return (
     <HeaderStyled>
       <LogoStyled>
-        <img src={doraCommunityOfPractice} height="100px" />
+        <img src={doraLogoNoWords} height="50px" />
       </LogoStyled>
       <Nav />
     </HeaderStyled>
