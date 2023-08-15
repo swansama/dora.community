@@ -1,0 +1,24 @@
+import Box from "@mui/material/Box";
+import { styled } from "@mui/material/styles";
+import { Link } from "react-router-dom";
+
+const NavStyled = styled(Box)({
+  display: "flex",
+});
+
+const NavItemStyled = styled(Box)({
+  padding: "0.5rem",
+});
+
+const NavItem = ({ path = "", label = "" }) => (
+  <NavItemStyled>
+    <Link to={path}>{label} </Link>
+  </NavItemStyled>
+);
+
+export const Nav = () => (
+  <NavStyled>
+    <NavItem path="/" label="Home" />
+    <NavItem path="/about" label="About" />
+  </NavStyled>
+);

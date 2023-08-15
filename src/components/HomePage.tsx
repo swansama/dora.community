@@ -10,7 +10,7 @@ const HomeStyled = styled(Box)({
 
 
 
-export const Home = () => {
+export const HomePage = () => {
   return (
     <HomeStyled>
      
