@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ErrorPage } from "./components/ErrorPage.tsx";
 import { AboutPage } from "./components/AboutPage.tsx";
 import { HomePage } from "./components/HomePage.tsx";
+import { JoinPage } from "./components/JoinPage.tsx";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
         path: "about",
         element: <AboutPage />,
       },
+      { 
+        path: "join",
+        element: <JoinPage />,
+      }
     ],
   },
 ]);

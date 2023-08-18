@@ -10,12 +10,13 @@ type CardProps = {
   imageLeft?: string;
   iconLeft?: any;
   iconStyle?: any;
-  children?: JSX.Element | JSX.Element[] | string;
+  // children?: JSX.Element | JSX.Element[] | string;
+  children?: any;
 };
 
 export const Card = ({ title, imageLeft, iconLeft, iconStyle, children }: CardProps) => {
   return (
-    <Box m="0.5rem" >
+    <Box m="0.5rem" display="flex" flex={1} flexDirection="column">
       <Box
         style={{
           borderRadius: "14px 14px 0 0",
@@ -37,7 +38,7 @@ export const Card = ({ title, imageLeft, iconLeft, iconStyle, children }: CardPr
         >
          <h3>{title}</h3> 
         </Box>
-        <Box display="flex">
+        <Box display="flex" height="100%">
           {imageLeft && (
             <Box p="1rem">
               <img src={imageLeft} width="150px" />
