@@ -1,26 +1,41 @@
 import Box from "@mui/material/Box";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import doraCommunityOfPractice from "../assets/dora-community-of-practice.png";
 import { styled } from "@mui/material/styles";
+import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 
-export const Card = ({ title = "", imageLeft = "" }) => {
+type CardProps = {
+  title: string;
+  imageLeft?: string;
+  iconLeft?: any;
+  iconStyle?: any;
+  children?: JSX.Element | JSX.Element[] | string;
+};
+
+export const Card = ({ title, imageLeft, iconLeft, iconStyle, children }: CardProps) => {
   return (
-    <Box m="0.5rem">
+    <Box m="0.5rem" >
       <Box
         style={{
           borderRadius: "14px 14px 0 0",
-          border: "1px solid #f8f9fa",
+          border: "2.5px solid #f8f9fa",
+          
         }}
       >
         <Box
           p="1rem"
           textAlign="center"
           style={{
-            // backgroundColor: "#f8f9fa",
-            backgroundColor: "#f00",
-            borderRadius: "14px 14px 0 0",
+            backgroundColor: "#f8f9fa",
+            // backgroundColor: "#f00",
+            // borderRadius: "14px 14px 0 0",
+            
+            borderRadius: "8px",
+            
           }}
         >
-          {title}
+         <h3>{title}</h3> 
         </Box>
         <Box display="flex">
           {imageLeft && (
@@ -28,11 +43,12 @@ export const Card = ({ title = "", imageLeft = "" }) => {
               <img src={imageLeft} width="150px" />
             </Box>
           )}
-          <Box p="1rem">
-            The DORA Community provides opportunities to learn, discuss, and
-            collaborate on software delivery and operational performance.
-            Enabling a culture of continuous improvement.
-          </Box>
+          {iconLeft && (
+            <Box p="1rem">
+              <FontAwesomeIcon icon={iconLeft} style={{...iconStyle,width:"150px", fontSize: "200px"}}  />
+            </Box>
+          )}
+          <Box p="1rem">{children}</Box>
         </Box>
       </Box>
     </Box>
