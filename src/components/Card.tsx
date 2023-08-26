@@ -1,9 +1,9 @@
 import Box from "@mui/material/Box";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import doraCommunityOfPractice from "../assets/dora-community-of-practice.png";
-import { styled } from "@mui/material/styles";
-import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
+// import doraCommunityOfPractice from "../assets/dora-community-of-practice.png";
+// import { styled } from "@mui/material/styles";
+// import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 
 type CardProps = {
   title: string;

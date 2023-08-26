@@ -42,9 +42,43 @@ export const JoinPage = () => {
         gap="1.5em"
         p="0.5rem"
       >
-        <Card title="Lean Coffee Discussions"></Card>
-        <Card title="Community Connections"></Card>
-        <Card title="Community Summit"></Card>
+        <Card title="Lean Coffee Discussions">
+          <p>
+            Community discussions use the{" "}
+            <a href="https://leancoffee.org/">Lean Coffee Format</a>. The goal
+            of these discussions is to provide opportunities for the community
+            to learn, listen, and collaborate. All types of participation is
+            welcome, including active listening.
+          </p>
+          <p>
+            Most sessions start with a guest speaker,{" "}
+            <a href="https://www.youtube.com/playlist?list=PLKK5zTDXqzFNt1OTjhlrCnhVl1UO2QMbk">
+              check out previous sessions.
+            </a>{" "}
+            Only the presentation portion is recorded.
+          </p>
+          <p>
+            Would you like to present at a community discussion? Please email{" "}
+            <a href="emailto:dora-community-events@googlegroups.com">
+              dora-community-events@googlegroups.com
+            </a>
+          </p>
+        </Card>
+        <Card title="Community Connections">
+        <p>Opportunity to meet other members of the community. Attendees are put into small groups, with the goal of making new connections, and learning from each other.</p>
+
+        </Card>
+        <Card title="Community Summit">
+         
+            <h4>Accelerate your journey with lessons from fellow travelers</h4>
+
+            <p>DORA studies the culture and capabilities that enable high-performing technology-driven organizations like yours.</p> <p>Join the inaugural DORA Community Summit to learn, discuss, and collaborate on putting the research findings into practice.
+
+Register now by adding the DORA Community Summit ($75) to your DevOps Enterprise Summit registration.</p>
+
+
+<p><a href="https://www.dora.community/summit">Learn more about the DORA Community Summit</a></p>
+        </Card>
       </Box>
       <Box>
         <Card title="DORA Guides"></Card>
