@@ -20,7 +20,7 @@ export const Card = ({ title, imageLeft, iconLeft, iconStyle, children }: CardPr
       <Box
         style={{
           borderRadius: "14px 14px 0 0",
-          border: "2.5px solid #f8f9fa",
+          border: "1px solid #dadce0",
           
         }}
       >
@@ -36,7 +36,7 @@ export const Card = ({ title, imageLeft, iconLeft, iconStyle, children }: CardPr
             
           }}
         >
-         <h3>{title}</h3> 
+         <h2>{title}</h2> 
         </Box>
         <Box display="flex" height="100%">
           {imageLeft && (
@@ -49,7 +49,7 @@ export const Card = ({ title, imageLeft, iconLeft, iconStyle, children }: CardPr
               <FontAwesomeIcon icon={iconLeft} style={{...iconStyle,width:"150px", fontSize: "200px"}}  />
             </Box>
           )}
-          <Box p="1rem">{children}</Box>
+          <Box p="1rem" id="card-content">{children}</Box>
         </Box>
       </Box>
     </Box>

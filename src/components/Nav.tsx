@@ -19,6 +19,7 @@ const NavItem = ({ path = "", label = "" }) => (
 export const Nav = () => (
   <NavStyled>
     <NavItem path="/" label="Home" />
-    <NavItem path="/about" label="About" />
+    <NavItem path="/communityguidelines" label="Community Guidelines" />
+    <NavItem path="/join" label="Join Community" />
   </NavStyled>
 );

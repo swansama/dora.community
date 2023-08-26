@@ -3,9 +3,9 @@ import ReactDOM from "react-dom/client";
 import { Root } from "./routes/Root.tsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ErrorPage } from "./components/ErrorPage.tsx";
-import { AboutPage } from "./components/AboutPage.tsx";
 import { HomePage } from "./components/HomePage.tsx";
 import { JoinPage } from "./components/JoinPage.tsx";
+import { CommunityGuidelinesPage } from "./components/CommunityGuidelines.tsx";
 
 const router = createBrowserRouter([
   {
@@ -15,8 +15,8 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <HomePage /> },
       {
-        path: "about",
-        element: <AboutPage />,
+        path: "communityguidelines",
+        element: <CommunityGuidelinesPage />,
       },
       { 
         path: "join",
