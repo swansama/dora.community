@@ -49,7 +49,7 @@ export const Card = ({ title, imageLeft, iconLeft, iconStyle, children }: CardPr
               <FontAwesomeIcon icon={iconLeft} style={{...iconStyle,width:"150px", fontSize: "200px"}}  />
             </Box>
           )}
-          <Box p="1rem" id="card-content">{children}</Box>
+          <Box p="1rem" width="100%" id="card-content">{children}</Box>
         </Box>
       </Box>
     </Box>

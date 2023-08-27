@@ -6,6 +6,7 @@ import { ErrorPage } from "./components/ErrorPage.tsx";
 import { HomePage } from "./components/HomePage.tsx";
 import { JoinPage } from "./components/JoinPage.tsx";
 import { CommunityGuidelinesPage } from "./components/CommunityGuidelines.tsx";
+import { SummitPage } from "./components/SummitPage.tsx";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       { 
         path: "join",
         element: <JoinPage />,
+      },
+      { 
+        path: "summit",
+        element: <SummitPage />,
       }
     ],
   },

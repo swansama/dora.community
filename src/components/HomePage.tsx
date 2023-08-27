@@ -81,6 +81,8 @@ export const HomePage = () => {
         <Box>
           <Card title="Calendar">
             <Box display="flex" justifyContent="center" id="test">
+              <Box width="800px">
+              
               <iframe
                 src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%233F51B5&ctz=America%2FNew_York&mode=AGENDA&src=ZTNmYmQ3NzY3ZDcxYWM2MDE3ZTJhYTZmOTBkYmRjZDNhYWNhZDg4MDkyNTllZGQ4NGEzNTgzZTVkZTMzYzViNkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%238E24AA"
                 // style="border:solid 1px #777"
@@ -90,7 +92,7 @@ export const HomePage = () => {
                 // frameborder="0"
                 // scrolling="no"
               ></iframe>
-
+          </Box>
               {/* <iframe
                 src="https://calendar.google.com/calendar/embed?src=e3fbd7767d71ac6017e2aa6f90dbdcd3aacad8809259edd84a3583e5de33c5b6%40group.calendar.google.com&ctz=America%2FNew_York"
                 // style="border: 0"

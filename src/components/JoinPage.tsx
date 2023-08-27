@@ -2,7 +2,10 @@ import { Card } from "./Card";
 import Box from "@mui/material/Box";
 import doraCommunityOfPractice from "../assets/dora-community-of-practice.png";
 import { Button } from "./Button";
-import { styled } from "@mui/material/styles";
+// import { DoraGuideHighlight} from "./DoraGuideHighlight";
+import steve from "../assets/steve.jpg"
+import { DoraGuideHighlight } from "./DoraGuideHighlight";
+// import { styled } from "@mui/material/styles";
 
 export const JoinPage = () => {
   return (
@@ -65,23 +68,35 @@ export const JoinPage = () => {
           </p>
         </Card>
         <Card title="Community Connections">
-        <p>Opportunity to meet other members of the community. Attendees are put into small groups, with the goal of making new connections, and learning from each other.</p>
-
+          <p>
+            Opportunity to meet other members of the community. Attendees are
+            put into small groups, with the goal of making new connections, and
+            learning from each other.
+          </p>
         </Card>
         <Card title="Community Summit">
-         
-            <h4>Accelerate your journey with lessons from fellow travelers</h4>
-
-            <p>DORA studies the culture and capabilities that enable high-performing technology-driven organizations like yours.</p> <p>Join the inaugural DORA Community Summit to learn, discuss, and collaborate on putting the research findings into practice.
-
-Register now by adding the DORA Community Summit ($75) to your DevOps Enterprise Summit registration.</p>
-
-
-<p><a href="https://www.dora.community/summit">Learn more about the DORA Community Summit</a></p>
+          <h4>Accelerate your journey with lessons from fellow travelers</h4>
+          <p>
+            DORA studies the culture and capabilities that enable
+            high-performing technology-driven organizations like yours.
+          </p>{" "}
+          <p>
+            Join the inaugural DORA Community Summit to learn, discuss, and
+            collaborate on putting the research findings into practice. Register
+            now by adding the DORA Community Summit ($75) to your DevOps
+            Enterprise Summit registration.
+          </p>
+          <p>
+            <a href="https://www.dora.community/summit">
+              Learn more about the DORA Community Summit
+            </a>
+          </p>
         </Card>
       </Box>
       <Box>
-        <Card title="DORA Guides"></Card>
+      <Card title="DORA Community Guides">
+          <DoraGuideHighlight title="Amanda Lewis" altText="Amanda Lewis" image={steve} body="I am awesome!" />
+      </Card>
       </Box>
     </>
   );
