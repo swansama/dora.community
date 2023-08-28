@@ -7,6 +7,21 @@ import { Card } from "./Card";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { Hero } from "./Hero";
 
+const handleDoraDevButton = () => {
+  window.open("https://dora.dev", "_blank");
+};
+
+const handleYoutubeButton = () => {
+  window.open(
+    "https://www.youtube.com/playlist?list=PLKK5zTDXqzFNt1OTjhlrCnhVl1UO2QMbk",
+    "_blank"
+  );
+};
+
+const handleSodrButton = () => {
+  window.open("https://bit.ly/dora-sodr", "_blank");
+};
+
 export const HomePage = () => {
   return (
     <>
@@ -25,7 +40,7 @@ export const HomePage = () => {
             capabilities that drive software delivery and operations
             performance. DORA helps teams apply those capabilities, leading to
             better organizational performance.
-            <Button variant="contained" centered>
+            <Button onClick={handleDoraDevButton} variant="contained" centered>
               Explore DORA.dev
             </Button>
           </Card>
@@ -37,7 +52,7 @@ export const HomePage = () => {
             world have taken part in the Accelerate State of DevOps survey,
             making it the largest and longest-running research of its kind. Year
             aft
-            <Button variant="contained" centered>
+            <Button onClick={handleSodrButton} variant="contained" centered>
               Read the Report
             </Button>
           </Card>
@@ -49,7 +64,7 @@ export const HomePage = () => {
             Use our quick check tool to discover how you compare to industry
             peers, identify specific capabilities you can use to improve
             performance, and make progress on your software delivery goals.
-            <Button variant="contained" centered>
+            <Button onClick={handleYoutubeButton} variant="contained" centered>
               Watch Community Recordings
             </Button>
           </Card>
