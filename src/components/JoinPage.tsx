@@ -3,7 +3,13 @@ import Box from "@mui/material/Box";
 import doraCommunityOfPractice from "../assets/dora-community-of-practice.png";
 import { Button } from "./Button";
 // import { DoraGuideHighlight} from "./DoraGuideHighlight";
-import steve from "../assets/steve.jpg"
+import steveFenton from "../assets/steve.jpg";
+import amandaLewisHeadshot from "../assets/amandalewis-headshot.jpg";
+import nathenHarvey from "../assets/nathen-harvey-3000 (1).jpg";
+import daveStanke from "../assets/davestanke-headshot.png";
+import denaliLumma from "../assets/DenaliLumma.jpeg";
+import saulWilliamson from "../assets/BetsalelWilliamson.jpeg";
+import lisaCrispin from "../assets/lisa-crispin-headshot.jpg";
 import { DoraGuideHighlight } from "./DoraGuideHighlight";
 // import { styled } from "@mui/material/styles";
 
@@ -94,9 +100,68 @@ export const JoinPage = () => {
         </Card>
       </Box>
       <Box>
-      <Card title="DORA Community Guides">
-          <DoraGuideHighlight title="Amanda Lewis" altText="Amanda Lewis" image={steve} body="I am awesome!" />
-      </Card>
+        <Card title="DORA Community Guides">
+          <DoraGuideHighlight
+            title="Steve Fenton"
+            altText="Steve Fenton"
+            image={steveFenton}
+            body="Steve Fenton is an Octonaut at Octopus Deploy and a five-time Microsoft MVP with more than two decades of experience in software delivery. He has written books on TypeScript (Apress, InfoQ), Octopus Deploy, and Web Operations. Steve has worked in the role of Software Engineer, SDET, Development Manager, and Director of Product and Data in a range of startups, SMEs, and enterprises. Connect with Steve on LinkedIn."
+          />
+          <DoraGuideHighlight
+            title="Denali Lumma"
+            altText="Denali Lumma"
+            image={denaliLumma}
+            body="Denali Lumma is a technology executive with over 20 years experience in startup to public offering, small, midsize and global companies supporting teams responsible for customer-facing product development for B2C, B2B, healthcare and life sciences, and infrastructure teams responsible for technical platforms, security, privacy, compliance, corporate IT, quality, reliability, and availability. She has helped to build multiple unicorns as an early engineer at companies like Netflix, 23andMe, Okta, Salesforce, and Uber. Denali serves on the board for Savage Jazz Dance Company, distinguished by its disciplined dancers and instructors, and its dedication to the exploration of jazz music’s range of expression. She is an investor in Steezy, making dance the next big global sport. Denali is Founder and CEO at Doubling, offering technical advisory services to portfolio companies at Y Combinator, Andreessen Horowitz, and other venture capital groups. Denali lives in Los Gatos, California with her husband and two children. Connect with Denali on LinkedIn. "
+          />
+          <DoraGuideHighlight
+            title="Betsalel (Saul) Williamson"
+            altText="Betsalel (Saul) Williamson"
+            image={saulWilliamson}
+            body="Betsalel (Saul) Williamson is an Electrical Engineer and has a broad range of experiences in community development and DevOps. He currently lives in Pittsburgh, PA and works as the lead DevOps Advocate at Astrobotic where he drives and implements best practices in product and software development. 
+            He is passionate about helping his peers and projects succeed. Saul has served on the boards of Pittsburgh chapters of PDMA and IEEE where he developed workshops, events, and conducted market research to help students and professionals engage with their local communities. 
+            Saul lives with sensory sensitivities and is a disability and LGBT+ advocate. He promotes diversity, equity, and inclusion practices that supply a healthy environment for everyone to learn and grow!  
+            Outside of work, Saul enjoys working on software hobby projects, traveling, and playing classical piano.  Connect with Saul on LinkedIn. "
+          />
+          <DoraGuideHighlight
+            title="Lisa Crispin"
+            altText="Lisa Crispin"
+            image={lisaCrispin}
+            body="Lisa Crispin is the co-author, with Janet Gregory, of three books: Agile Testing
+            Condensed: A Brief Introduction, More Agile Testing: Learning Journeys for the Whole
+            Team, Agile Testing: A Practical Guide for Testers and Agile Teams; the LiveLessons
+            Agile Testing Essentials video course. She and Janet co-founded the Agile Testing
+            Fellowship, which offers “Holistic Testing: Strategies for agile teams” live training
+            course both remotely and in-person. Lisa was voted by her peers as the Most InfluentialAgile Testing Professional Person at Agile Testing Days in 2012. She is co-founder with Janet of Agile Testing Fellowship, Inc. and is happily available for training and consulting. Please visit www.lisacrispin.com, www.agiletestingfellow.com, and
+            www.agiletester.ca for more. Contact Lisa on Twitter as @lisacrispin, and LinkedIn."
+          />
+        </Card>
+        <Card title="DORA Advocacy Team">
+          <DoraGuideHighlight
+            title="Nathen Harvey"
+            altText="Nathen Harvey"
+            image={nathenHarvey}
+            body="Nathen Harvey has built a career on helping teams realize their potential while aligning technology to business outcomes.
+
+            As a Cloud Developer Advocate at Google, Nathen helps the industry understand and apply DevOps and SRE practices in the cloud.  These practices are rooted in the understanding that increased reliability comes with increased velocity.
+            
+            He is part of the DevOpsDays conferences global organizing committee and was a technical reviewer for the Accelerate State of DevOps Report."
+          />
+          <DoraGuideHighlight
+            title="Dave Stanke"
+            altText="Dave Stanke"
+            image={daveStanke}
+            body="Dave Stanke is a Developer Advocate for DORA, a program run by Google Cloud. He specializes in DevOps, Site Reliability Engineering (SRE), and other flavors of technical relationship therapy. He loves chatting with practitioners: listening to stories, telling stories, sharing a healthy cry. Prior to Google, he was the CTO of OvationTix, a SaaS startup in the performing arts industry, where he specialized in feeding memory to Java servers. He chose on purpose to live in New Jersey, where he enjoys cooking, indie rock, and fatherhood."
+          />
+          <DoraGuideHighlight
+            title="Amanda Lewis"
+            altText="Amanda Lewis"
+            image={amandaLewisHeadshot}
+            body="Amanda Lewis is the DORA.community Development Lead and a developer advocate with Google Cloud, focused on DORA, DevOps, and Developer Productivity.   
+
+Amanda has spent her career building connections across leadership, developers, product managers, project management, and operators through working on teams that developed e-commerce platforms, content management systems, observability tools, and supported developers. These connections and conversations lead to happy customers and better outcomes for the business. She brings her years of experience and empathy to the work that she does helping teams understand and implement DevOps and reliability practices.
+"
+          />
+        </Card>
       </Box>
     </>
   );

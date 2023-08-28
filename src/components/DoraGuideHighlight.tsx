@@ -17,7 +17,7 @@ export const DoraGuideHighlight = ({ title, altText, image, body }: GuideProps) 
   return (
     <Card >
       <CardMedia
-        sx={{ height: 250 }}
+        sx={{ height: 500 }}
         image= {image}
         title= {altText}
       />
@@ -30,8 +30,7 @@ export const DoraGuideHighlight = ({ title, altText, image, body }: GuideProps) 
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
+         {/* add linkedIn */}
       </CardActions>
     </Card>
   );
