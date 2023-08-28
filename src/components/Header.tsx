@@ -3,6 +3,7 @@ import { styled } from "@mui/material/styles";
 import doraLogoNoWords from "../assets/dora-logo-no-words.svg";
 import { Nav } from "./Nav";
 
+
 const HeaderStyled = styled(Box)({
   padding: "0.5rem",
   display: "flex",
