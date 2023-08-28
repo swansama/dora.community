@@ -12,7 +12,9 @@ const NavItemStyled = styled(Box)({
 
 const NavItem = ({ path = "", label = "" }) => (
   <NavItemStyled>
-    <Link to={path}>{label} </Link>
+    <Link style={{ textDecoration: "none", color: "#5f6368" }} to={path}>
+      {label}{" "}
+    </Link>
   </NavItemStyled>
 );
 
@@ -21,6 +23,6 @@ export const Nav = () => (
     <NavItem path="/" label="Home" />
     <NavItem path="/communityguidelines" label="Community Guidelines" />
     <NavItem path="/join" label="Join Community" />
-    <NavItem path="summit" label="Community Summit"/>
+    <NavItem path="summit" label="Community Summit" />
   </NavStyled>
 );

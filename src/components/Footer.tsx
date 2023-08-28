@@ -12,7 +12,12 @@ const NavStyled = styled(Box)({});
 export const Footer = () => {
   return (
     <FooterStyled>
-      <NavStyled>Home</NavStyled>
+      <NavStyled>
+        © 2023 DORA is a program run by Google Cloud. All content on this site
+        is licensed by Google LLC under CC BY-NC-SA 4.0, unless otherwise
+        specified. All Rights Reserved{" "}
+        <a href="https://policies.google.com/privacy">Privacy Policy</a>
+      </NavStyled>
     </FooterStyled>
   );
 };
