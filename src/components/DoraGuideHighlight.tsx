@@ -6,21 +6,21 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
 type GuideProps = {
-    altText: string;
-    image?: string;
-    title: string;
-    body: string;
-  };
+  altText: string;
+  image?: string;
+  title: string;
+  body: string;
+};
 
-
-export const DoraGuideHighlight = ({ title, altText, image, body }: GuideProps) => {
+export const DoraGuideHighlight = ({
+  title,
+  altText,
+  image,
+  body,
+}: GuideProps) => {
   return (
-    <Card >
-      <CardMedia
-        sx={{ height: 500 }}
-        image= {image}
-        title= {altText}
-      />
+    <Card>
+      <CardMedia sx={{ height: 500 }} image={image} title={altText} />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {title}
@@ -29,9 +29,7 @@ export const DoraGuideHighlight = ({ title, altText, image, body }: GuideProps) 
           {body}
         </Typography>
       </CardContent>
-      <CardActions>
-         {/* add linkedIn */}
-      </CardActions>
+      <CardActions>{/* add linkedIn */}</CardActions>
     </Card>
   );
-}
+};
