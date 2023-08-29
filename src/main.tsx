@@ -7,6 +7,7 @@ import { HomePage } from "./components/HomePage.tsx";
 import { JoinPage } from "./components/JoinPage.tsx";
 import { CommunityGuidelinesPage } from "./components/CommunityGuidelines.tsx";
 import { SummitPage } from "./components/SummitPage.tsx";
+import { OpeningKeynotePage } from "./components/OpeningKeynotePage.tsx";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       { 
         path: "summit",
         element: <SummitPage />,
+      },
+      { 
+        path: "summit/opening-keynote",
+        element: <OpeningKeynotePage />,
       }
     ],
   },
